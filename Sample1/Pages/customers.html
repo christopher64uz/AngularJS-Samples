@@ -1,0 +1,18 @@
+<h3>Customers Table</h3>
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th ng-click="doSort('id')">ID</th>
+            <th ng-click="doSort('name')">Name</th>
+            <th ng-click="doSort('order')">OrderTotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="user in Users| orderBy:state:reverse">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.order | currency}}</td>
+        </tr>
+    </tbody>
+</table>
+<span>Total Customers: {{ Users.length }}</span>

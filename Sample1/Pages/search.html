@@ -1,0 +1,8 @@
+<div>
+    <h3>Input to search.</h3>
+    <input type="text" ng-model="NameText.name" />
+    <ul>
+        <li ng-repeat="user in Users | filter:NameText | orderBy: 'id'">{{ user.name }} {{ user.order | currency }} {{ user.id }}
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,16 @@
+/* Styles go here */
+.navbar-fixed-top{
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-header{
+    font-family: Times, serif;
+    font-weight: bold;
+    background-color: azure;
+}
+#navbarTop{
+    background-color: azure;
+}
+#welcomeMsg{
+    margin-top: inherit;
+}
